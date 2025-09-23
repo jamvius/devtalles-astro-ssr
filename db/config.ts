@@ -1,14 +1,14 @@
-import { defineDb, defineTable, column } from 'astro:db';
+import { defineDb, defineTable, column } from "astro:db";
 
 const Clients = defineTable({
   columns: {
-    id: column.number({ primaryKey: true}),
+    id: column.number({ primaryKey: true }),
     name: column.text(),
     age: column.number(),
-    isActive: column.boolean()
-  }
-})
+    isActive: column.boolean(),
+  },
+});
 
 export default defineDb({
   tables: { Clients },
-})
+});
