@@ -7,7 +7,7 @@
     "dev:remote": "astro dev --remote",
     "start": "astro dev",
     "build": "astro build --remote",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist",
     "astro": "astro"
   },
   "dependencies": {
@@ -19,5 +19,8 @@
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.13.10",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.38.0"
   }
 }

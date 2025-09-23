@@ -11,7 +11,7 @@ import db from "@astrojs/db";
 // https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
-  integrations: [mdx(), sitemap(), db()],
+  integrations: [db({ mode: "web" })],
   output: "server",
   adapter: cloudflare(),
 });
